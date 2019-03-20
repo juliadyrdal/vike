@@ -30,12 +30,32 @@ body {
   box-sizing: border-box; }
 
 .header {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   position: absolute;
   top: 0;
   background-image: url("../img/header2x.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
+  .header__box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); }
+  .header__heading {
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    font-size: 7.6rem;
+    letter-spacing: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff; }
+  .header__hr {
+    color: #fff; }
+  .header__sub-heading {
+    margin-top: 0.5rem;
+    font-size: 5.2rem;
+    text-transform: lowercase;
+    letter-spacing: 0rem; }
 
 .navigation {
   margin: 6rem 5rem;
