@@ -29,6 +29,13 @@ html {
 body {
   box-sizing: border-box; }
 
+.button {
+  padding: 1.7rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #05A0B8; }
+
 .header {
   height: 70vh;
   width: 100%;
@@ -58,6 +65,38 @@ body {
     letter-spacing: 0rem; }
 
 .navigation {
-  margin: 6rem 5rem;
+  display: flex;
+  align-items: center;
+  margin: 4rem 10rem;
   height: 5rem;
   background-color: #fff; }
+  .navigation a {
+    text-decoration: none;
+    font-family: sans-serif; }
+  .navigation__logo {
+    margin-right: 1rem;
+    margin-left: 5rem;
+    color: #333;
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-transform: uppercase; }
+  .navigation__logo-sub {
+    margin-right: auto;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 200; }
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 35%;
+    margin-right: 7%;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 200;
+    list-style-type: none; }
+  .navigation__link {
+    color: #333; }
+  .navigation__button {
+    justify-content: flex-end;
+    align-self: stretch; }
