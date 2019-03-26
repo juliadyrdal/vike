@@ -27,7 +27,19 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #333;
+  font-family: sans-serif; }
+
+.heading {
+  margin-top: 3rem;
+  font-size: 3.2rem;
+  font-weight: 200; }
+
+.paragraph {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200; }
 
 .button {
   padding: 1.7rem 2rem;
@@ -39,13 +51,12 @@ body {
 .header {
   height: 70vh;
   width: 100%;
-  position: absolute;
-  top: 0;
+  margin-top: -4rem;
   background-image: url("../img/header2x.png");
   background-size: cover;
   background-position: center; }
   .header__box {
-    margin-top: 3.5rem;
+    margin-top: 8rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%); }
@@ -68,6 +79,8 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  position: relative;
+  top: 4rem;
   margin: 4rem 10rem;
   height: 5rem;
   background-color: #fff; }
@@ -121,7 +134,7 @@ body {
     display: inline-block;
     width: 100%; }
   .dropdown__link:hover {
-    background-color: #999;
+    background-color: #D8D8D8;
     color: #fff; }
 
 .navigation__item:hover > ul,
@@ -131,3 +144,19 @@ body {
   display: block;
   width: 13%;
   background-color: #fff; }
+
+.section-salgstekst {
+  background-color: #D8D8D8; }
+
+.salgstekst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -5rem;
+  margin: 0 10rem;
+  background-color: #fff; }
+
+.tekstboks {
+  width: 60%;
+  padding: 5rem 0; }
