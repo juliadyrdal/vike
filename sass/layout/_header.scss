@@ -6,3 +6,25 @@
     background-size: cover;
     background-position: center;
 }
+
+.heading-overlay {
+    margin-left: 10rem;
+    margin-top: 13rem;
+    padding: 2rem 2rem;
+    width: 40%;
+    font-size: 2.6rem;
+    font-weight: 200;
+    color: #fff;
+    background-color: rgba($color-primary, $alpha: .75)
+}
+
+.heading-overlay--sub {
+    margin-left: 10rem;
+    margin-top: 4rem;
+    padding: 2rem 2rem;
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #fff;
+    background-color: rgba($color-secondary, $alpha: .75)
+}

@@ -56,6 +56,26 @@ body {
   background-size: cover;
   background-position: center; }
 
+.heading-overlay {
+  margin-left: 10rem;
+  margin-top: 13rem;
+  padding: 2rem 2rem;
+  width: 40%;
+  font-size: 2.6rem;
+  font-weight: 200;
+  color: #fff;
+  background-color: rgba(5, 160, 184, 0.75); }
+
+.heading-overlay--sub {
+  margin-left: 10rem;
+  margin-top: 4rem;
+  padding: 2rem 2rem;
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #fff;
+  background-color: rgba(5, 127, 184, 0.75); }
+
 .navigation {
   display: flex;
   align-items: center;
