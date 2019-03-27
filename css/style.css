@@ -27,9 +27,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  color: #333;
-  font-family: sans-serif; }
+  color: #333; }
 
 .heading {
   margin-top: 3rem;
@@ -55,26 +55,6 @@ body {
   background-image: url("../img/header2x.png");
   background-size: cover;
   background-position: center; }
-  .header__box {
-    margin-top: 8rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); }
-  .header__heading {
-    margin-bottom: 0.5rem;
-    font-family: sans-serif;
-    font-size: 7.6rem;
-    letter-spacing: 1rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #fff; }
-  .header__hr {
-    color: #fff; }
-  .header__sub-heading {
-    margin-top: 0.5rem;
-    font-size: 5.2rem;
-    text-transform: lowercase;
-    letter-spacing: 0rem; }
 
 .navigation {
   display: flex;
@@ -144,19 +124,3 @@ body {
   display: block;
   width: 13%;
   background-color: #fff; }
-
-.section-salgstekst {
-  background-color: #D8D8D8; }
-
-.salgstekst {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  top: -5rem;
-  margin: 0 10rem;
-  background-color: #fff; }
-
-.tekstboks {
-  width: 60%;
-  padding: 5rem 0; }
