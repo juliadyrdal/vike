@@ -85,7 +85,10 @@ body {
   .icon-menu__box {
     display: flex;
     flex-basis: 40%;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    transition: .3s; }
+  .icon-menu__box:hover {
+    transform: translateY(-1rem); }
   .icon-menu__icon-link {
     margin-right: 1rem; }
   .icon-menu__icon {

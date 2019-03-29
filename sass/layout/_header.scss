@@ -42,6 +42,11 @@
         flex-basis: 40%;
 
         margin-right: 3rem;
+        transition: .3s;
+    }
+
+    &__box:hover {
+        transform: translateY(-1rem);
     }
 
     &__icon-link {
