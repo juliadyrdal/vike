@@ -1,5 +1,5 @@
 .header {
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     margin-top: -4rem;
     background-image: url("../img/header2x.png");
@@ -11,8 +11,8 @@
     margin-left: 10rem;
     margin-top: 13rem;
     padding: 2rem 2rem;
-    width: 40%;
-    font-size: 2.6rem;
+    width: 50%;
+    font-size: 3.4rem;
     font-weight: 200;
     color: #fff;
     background-color: rgba($color-primary, $alpha: .75)
@@ -22,9 +22,45 @@
     margin-left: 10rem;
     margin-top: 4rem;
     padding: 2rem 2rem;
-    width: 50%;
-    font-size: 1.6rem;
+    width: 60%;
+    font-size: 1.8rem;
     font-weight: 200;
     color: #fff;
     background-color: rgba($color-secondary, $alpha: .75)
+}
+
+.icon-menu {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4rem 10rem;
+    margin-top: 19rem;
+    background-color: $color-primary;
+
+    &__box {
+        display: flex;
+        flex-basis: 40%;
+
+        margin-right: 3rem;
+    }
+
+    &__icon-link {
+        margin-right: 1rem;
+    }
+
+    &__icon {
+        height: 9rem;
+    }
+
+    &__link {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__text {
+        margin-top: 1rem;
+        text-decoration: none;
+    }
 }
