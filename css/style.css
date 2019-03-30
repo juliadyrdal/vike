@@ -193,6 +193,7 @@ body {
     transform: scale(1.1); }
 
 .galleria {
+  margin-top: -12rem;
   margin-left: 10rem;
   margin-right: 10rem;
   max-width: 100%;
