@@ -1,0 +1,24 @@
+{
+    "remotePath": "/www",
+    "host": "ftp.domeneshop.no",
+    "username": "happyotter",
+    "password": "39-natta-nidet-sut-Fnugg",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": true,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        ".vscode",
+        ".git", 
+        ".DS_Store"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": false,
+        "extensionsToInclude": [],
+        "path": ""
+    }
+}

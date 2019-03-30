@@ -80,7 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
-  margin-top: 19rem;
+  margin-top: 13rem;
   background-color: #05A0B8; }
   .icon-menu__box {
     display: flex;
@@ -169,4 +169,32 @@ body {
   opacity: 1;
   display: block;
   width: 13%;
+  background-color: #fff; }
+
+.section-gallery {
+  margin-top: 20rem; }
+
+.gallery {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  list-style: none;
+  padding: 0;
+  width: 100%; }
+  .gallery__item {
+    margin: 1em; }
+  .gallery__img {
+    padding: .5rem;
+    height: 22rem;
+    transition: 1s; }
+  .gallery__img:hover {
+    transform: scale(1.1); }
+
+.galleria {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  max-width: 100%;
+  height: 60rem;
   background-color: #fff; }

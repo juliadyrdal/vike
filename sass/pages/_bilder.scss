@@ -1,0 +1,41 @@
+.section-gallery {
+    margin-top: 20rem;
+}
+
+.gallery {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+
+
+    margin-left: 10rem;
+    margin-right: 10rem;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    &__item {
+        margin: 1em;
+    }
+
+
+    &__img {
+        padding: .5rem;
+       // width: 20%;
+        height: 22rem;
+        transition: 1s;
+    }
+
+    &__img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.galleria { 
+    margin-left: 10rem;
+    margin-right: 10rem;
+    max-width: 100%; 
+    height: 60rem; 
+    background-color: #fff; 
+}
