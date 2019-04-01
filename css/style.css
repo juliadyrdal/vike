@@ -41,12 +41,30 @@ body {
   font-size: 1.8rem;
   font-weight: 200; }
 
+.bold {
+  font-weight: 600; }
+
 .button {
   padding: 1.7rem 2rem;
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
   background-color: #05A0B8; }
+
+.footer {
+  margin-top: 10rem;
+  padding: 5rem 10rem 5rem;
+  background-color: #057FB8; }
+  .footer__info {
+    display: flex; }
+  .footer__list {
+    margin-right: 6rem;
+    list-style-type: none;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #fff; }
+  .footer a {
+    color: #fff; }
 
 .header {
   height: 85vh;
@@ -80,7 +98,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
-  margin-top: 13rem;
+  margin-top: 16rem;
   background-color: #05A0B8; }
   .icon-menu__box {
     display: flex;
