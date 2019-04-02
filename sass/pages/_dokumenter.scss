@@ -4,9 +4,9 @@
 }
 
 .dokumenter {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     &__row {
         display: flex;
@@ -15,13 +15,14 @@
         list-style-type: none;
     }
 
-    &__row:not(:last-child) {
+    &__row {
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
 
     &__item:not(:last-child) {
         margin-right: 5rem;
+        display: inline-block;
     }
 
     &__link {
@@ -42,5 +43,6 @@
     &__icon {
         margin-bottom: 1rem;
         height: 15rem;
+        align-self: flex-start;
     }
 }
