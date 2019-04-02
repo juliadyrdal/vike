@@ -234,7 +234,7 @@ body {
     margin-bottom: 5rem;
     list-style-type: none; }
   .dokumenter__item {
-    margin-top: 2rem; }
+    margin-top: 4rem; }
   .dokumenter__item:not(:last-child) {
     margin-right: 5rem;
     display: inline-block; }
