@@ -217,3 +217,33 @@ body {
   max-width: 100%;
   height: 60rem;
   background-color: #fff; }
+
+.section-dokumenter {
+  padding: 5rem 10rem;
+  height: 80vh; }
+
+.dokumenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .dokumenter__row {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none; }
+  .dokumenter__row:not(:last-child) {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  .dokumenter__item:not(:last-child) {
+    margin-right: 5rem; }
+  .dokumenter__link {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #037E91;
+    transition: .3s; }
+  .dokumenter__link:hover {
+    transform: translateY(-1rem); }
+  .dokumenter__icon {
+    margin-bottom: 1rem;
+    height: 15rem; }
