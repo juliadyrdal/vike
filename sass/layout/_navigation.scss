@@ -8,6 +8,14 @@
     height: 5rem;
     background-color: #fff;
 
+    @include respond (tab-land) {
+        margin: 4rem 7rem;
+    }
+
+    @include respond (tab-port) {
+        margin: 3rem 5rem;
+    }
+
     & a {
         text-decoration: none;
         font-family: sans-serif;
@@ -45,6 +53,14 @@
     &__link {
         padding: 2rem 2rem;
         color: #333;
+
+        @include respond (tab-land) {
+            padding: 2rem 1.5rem;
+        }
+
+        @include respond (tab-port) {
+            padding: 2rem 1rem;
+        }
     }
 
     &__button {
