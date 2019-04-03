@@ -5,6 +5,14 @@
     background-image: url("../img/header2x.png");
     background-size: cover;
     background-position: center;
+
+    @include respond(tab-land) {
+        height: 75vh;
+    }
+
+    @include respond(tab-port) {
+        height: 65vh;
+    }
 }
 
 .heading-overlay {
@@ -15,7 +23,24 @@
     font-size: 3.4rem;
     font-weight: 200;
     color: #fff;
-    background-color: rgba($color-primary, $alpha: .75)
+    background-color: rgba($color-primary, $alpha: .75);
+
+    @include respond(tab-land) {
+        margin-left: 7rem;
+        width: 55%;
+        font-size: 3rem;
+    }
+
+    @include respond(tab-port) {
+        margin-left: 5rem;
+        width: 65%;
+        font-size: 2.8rem;
+    }
+
+    @include respond(phone) {
+        width: 75%;
+        font-size: 2.4rem;
+    }
 }
 
 .heading-overlay--sub {
@@ -26,7 +51,22 @@
     font-size: 1.8rem;
     font-weight: 200;
     color: #fff;
-    background-color: rgba($color-secondary, $alpha: .75)
+    background-color: rgba($color-secondary, $alpha: .75);
+
+    @include respond(tab-land) {
+        margin-left: 7rem;
+        width: 65%;
+    }
+
+    @include respond(tab-port) {
+        margin-left: 5rem;
+        width: 75%;
+    }
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
 }
 
 .icon-menu {
@@ -37,12 +77,29 @@
     margin-top: 16rem;
     background-color: $color-primary;
 
+    @include respond(tab-land) {
+        padding: 4rem 7rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 4rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 2.5rem 5rem;
+        margin-top: 15rem;
+    }
+
     &__box {
         display: flex;
         flex-basis: 40%;
 
         margin-right: 3rem;
         transition: .3s;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
     }
 
     &__box:hover {
@@ -55,6 +112,10 @@
 
     &__icon {
         height: 9rem;
+
+        @include respond(phone) {
+            height: 5rem;
+        }
     }
 
     &__link {
@@ -62,10 +123,18 @@
         font-size: 1.4rem;
         text-decoration: none;
         color: #fff;
+
+        @include respond(phone) {
+            font-size: 1.3rem;
+        }
     }
 
     &__text {
         margin-top: 1rem;
         text-decoration: none;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 }

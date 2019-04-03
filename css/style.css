@@ -101,6 +101,12 @@ body {
   background-image: url("../img/header2x.png");
   background-size: cover;
   background-position: center; }
+  @media (max-width: 75em) {
+    .header {
+      height: 75vh; } }
+  @media (max-width: 56.25em) {
+    .header {
+      height: 65vh; } }
 
 .heading-overlay {
   margin-left: 10rem;
@@ -111,6 +117,20 @@ body {
   font-weight: 200;
   color: #fff;
   background-color: rgba(5, 160, 184, 0.75); }
+  @media (max-width: 75em) {
+    .heading-overlay {
+      margin-left: 7rem;
+      width: 55%;
+      font-size: 3rem; } }
+  @media (max-width: 56.25em) {
+    .heading-overlay {
+      margin-left: 5rem;
+      width: 65%;
+      font-size: 2.8rem; } }
+  @media (max-width: 37.5em) {
+    .heading-overlay {
+      width: 75%;
+      font-size: 2.4rem; } }
 
 .heading-overlay--sub {
   margin-left: 10rem;
@@ -121,6 +141,18 @@ body {
   font-weight: 200;
   color: #fff;
   background-color: rgba(5, 127, 184, 0.75); }
+  @media (max-width: 75em) {
+    .heading-overlay--sub {
+      margin-left: 7rem;
+      width: 65%; } }
+  @media (max-width: 56.25em) {
+    .heading-overlay--sub {
+      margin-left: 5rem;
+      width: 75%; } }
+  @media (max-width: 37.5em) {
+    .heading-overlay--sub {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
 
 .icon-menu {
   display: flex;
@@ -128,25 +160,47 @@ body {
   padding: 4rem 10rem;
   margin-top: 16rem;
   background-color: #05A0B8; }
+  @media (max-width: 75em) {
+    .icon-menu {
+      padding: 4rem 7rem; } }
+  @media (max-width: 75em) {
+    .icon-menu {
+      padding: 4rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .icon-menu {
+      padding: 2.5rem 5rem;
+      margin-top: 15rem; } }
   .icon-menu__box {
     display: flex;
     flex-basis: 40%;
     margin-right: 3rem;
     transition: .3s; }
+    @media (max-width: 56.25em) {
+      .icon-menu__box {
+        flex-direction: column; } }
   .icon-menu__box:hover {
     transform: translateY(-1rem); }
   .icon-menu__icon-link {
     margin-right: 1rem; }
   .icon-menu__icon {
     height: 9rem; }
+    @media (max-width: 37.5em) {
+      .icon-menu__icon {
+        height: 5rem; } }
   .icon-menu__link {
     margin-top: 1rem;
     font-size: 1.4rem;
     text-decoration: none;
     color: #fff; }
+    @media (max-width: 37.5em) {
+      .icon-menu__link {
+        font-size: 1.3rem; } }
   .icon-menu__text {
     margin-top: 1rem;
     text-decoration: none; }
+    @media (max-width: 56.25em) {
+      .icon-menu__text {
+        display: none; } }
 
 .navigation {
   display: flex;
