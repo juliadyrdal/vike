@@ -81,8 +81,19 @@ body {
 
 .footer {
   margin-top: 10rem;
-  padding: 5rem 10rem 5rem;
+  padding: 5rem 10rem;
   background-color: #057FB8; }
+  @media (max-width: 75em) {
+    .footer {
+      margin-top: 13rem;
+      padding-left: 7rem; } }
+  @media (max-width: 56.25em) {
+    .footer {
+      margin-top: 14rem;
+      padding-left: 5rem; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      margin-top: 7rem; } }
   .footer__info {
     display: flex; }
   .footer__list {
