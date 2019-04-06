@@ -246,6 +246,9 @@ body {
     font-size: 2.8rem;
     font-weight: 200;
     text-transform: uppercase; }
+    @media (max-width: 37.5em) {
+      .navigation__logo {
+        margin-left: 1.5rem; } }
   .navigation__logo-sub {
     margin-right: auto;
     color: #333;
@@ -261,6 +264,9 @@ body {
     font-size: 1.6rem;
     font-weight: 200;
     list-style-type: none; }
+    @media (max-width: 37.5em) {
+      .navigation__list {
+        display: none; } }
   .navigation__link {
     padding: 2rem 2rem;
     color: #333; }
@@ -273,6 +279,9 @@ body {
   .navigation__button {
     justify-content: flex-end;
     align-self: stretch; }
+    @media (max-width: 37.5em) {
+      .navigation__button {
+        display: none; } }
 
 .dropdown {
   z-index: 100;
@@ -302,6 +311,103 @@ body {
   display: block;
   width: 13%;
   background-color: #fff; }
+
+.navigation-mobile {
+  display: none;
+  /*
+    * Just a quick hamburger
+    */
+  /* 
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+  /*
+     * But let's hide the middle one.
+     */
+  /*
+     * Ohyeah and the last one should go the other direction
+    */
+  /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+  /*
+     * And let's slide it in from the left
+     */ }
+  @media (max-width: 37.5em) {
+    .navigation-mobile {
+      display: flex;
+      flex-direction: column; } }
+  .navigation-mobile__toggle {
+    display: block;
+    position: relative;
+    top: .3rem;
+    right: 1.2rem;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none; }
+  .navigation-mobile__toggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  .navigation-mobile__toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #666;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  .navigation-mobile__toggle span:first-child {
+    transform-origin: 0% 0%; }
+  .navigation-mobile__toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; }
+  .navigation-mobile__toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff; }
+  .navigation-mobile__toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2); }
+  .navigation-mobile__toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px); }
+  .navigation-mobile__list {
+    position: absolute;
+    width: 55rem;
+    height: 130vh;
+    margin-top: -10rem;
+    margin-left: -42rem;
+    padding: 5rem;
+    padding-left: 15rem;
+    padding-top: 12.5rem;
+    background: #05A0B8;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  .navigation-mobile__list li {
+    padding: 10px 0;
+    font-size: 22px; }
+  .navigation-mobile__item {
+    padding-bottom: 2rem; }
+  .navigation-mobile__link {
+    color: #fff; }
+  .navigation-mobile__toggle input:checked ~ ul {
+    transform: none; }
 
 .section-gallery {
   margin-top: 20rem; }
