@@ -1,15 +1,15 @@
 .section-gallery {
     margin-top: 20rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .gallery {
     display: flex;
-    //justify-content: center;
     flex-wrap: wrap;
 
-    padding-left: 10rem;
-    padding-right: 10rem;
-    width: 100%;
+    margin-top: 2rem;
+    //width: 100%;
 
     @include respond(tab-land) {
         padding-left: 7rem;
@@ -23,6 +23,17 @@
 
 
     &__img {
+        padding: .5rem;
+       // width: 20%;
+        height: 22rem;
+        transition: 1s;
+
+        @include respond(phone) {
+            height: 38rem;
+        }
+    }
+
+    &__vid {
         padding: .5rem;
        // width: 20%;
         height: 22rem;

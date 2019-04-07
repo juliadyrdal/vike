@@ -410,14 +410,14 @@ body {
     transform: none; }
 
 .section-gallery {
-  margin-top: 20rem; }
+  margin-top: 20rem;
+  padding-left: 10rem;
+  padding-right: 10rem; }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  width: 100%; }
+  margin-top: 2rem; }
   @media (max-width: 75em) {
     .gallery {
       padding-left: 7rem;
@@ -427,6 +427,13 @@ body {
       padding-left: 5rem;
       padding-right: 5rem; } }
   .gallery__img {
+    padding: .5rem;
+    height: 22rem;
+    transition: 1s; }
+    @media (max-width: 37.5em) {
+      .gallery__img {
+        height: 38rem; } }
+  .gallery__vid {
     padding: .5rem;
     height: 22rem;
     transition: 1s; }
