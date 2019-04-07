@@ -20,5 +20,7 @@
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fslightbox": "^1.6.1"
+  }
 }

@@ -3,13 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="galleria/galleria-1.5.7.min.js"></script>
         
         <link rel="stylesheet" href="css/style.css">
-
-    
-
+        <link rel="stylesheet" href="css/fslightbox.min.css">
         
         
         <title>Vike</title>
@@ -47,55 +43,41 @@
         </header>
 
         <section class="section-gallery">
-            <!-- <ul class="gallery">
+            <ul class="gallery">
                 <li class="gallery__item">
-                    <a href="img/foto2.jpg"><img class="gallery__img" src="img/foto2.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto2.jpg"><img class="gallery__img" src="img/foto2.jpg" alt="thumbnail"></a>
                 </li>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto2.jpg"><img class="gallery__img" src="img/foto2.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox"  href="img/foto2.jpg"><img class="gallery__img" src="img/foto2.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto3.jpg"><img class="gallery__img" src="img/foto3.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto3.jpg"><img class="gallery__img" src="img/foto3.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto4.jpg"><img class="gallery__img" src="img/foto4.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto4.jpg"><img class="gallery__img" src="img/foto4.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto5.jpg"><img class="gallery__img" src="img/foto5.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto5.jpg"><img class="gallery__img" src="img/foto5.jpg" alt="thumbnail"></a>
                 </li>
             </ul>
             <ul class="gallery">
                 <li class="gallery__item">
-                    <a href="img/foto6.jpg"><img class="gallery__img" src="img/foto6.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto6.jpg"><img class="gallery__img" src="img/foto6.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto7.jpg"><img class="gallery__img" src="img/foto7.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto7.jpg"><img class="gallery__img" src="img/foto7.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto8.jpg"><img class="gallery__img" src="img/foto8.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto8.jpg"><img class="gallery__img" src="img/foto8.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto9.jpg"><img class="gallery__img" src="img/foto9.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto9.jpg"><img class="gallery__img" src="img/foto9.jpg" alt="thumbnail"></a>
                 </li>
                 <li class="gallery__item">
-                    <a href="img/foto10.jpg"><img class="gallery__img" src="img/foto10.jpg" alt="thumbnail"></a>
+                    <a data-fslightbox="gallery__lightbox" href="img/foto10.jpg"><img class="gallery__img" src="img/foto10.jpg" alt="thumbnail"></a>
                 </li>
-            </ul> -->
-            <div class="galleria">
-                    <img src="img/foto2.jpg">
-                    <img src="img/foto3.jpg">
-                    <img src="img/foto4.jpg">
-                </div>
-    
-                <script>
-                    (function() { 
-                        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-                        Galleria.run('.galleria');
-                    }());
-                </script>
-
-
+            </ul>
 
         </section>
 
@@ -155,6 +137,7 @@
             </div>
         </footer>
 
-
+        
+        <script src="js/fslightbox.min.js"></script>
     </body>
 </html>
