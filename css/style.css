@@ -80,6 +80,8 @@ body {
   background-color: #05A0B8; }
 
 .footer {
+  display: flex;
+  justify-content: center;
   margin-top: 10rem;
   padding: 5rem 10rem;
   background-color: #057FB8; }
@@ -110,7 +112,7 @@ body {
     color: #fff; }
     @media (max-width: 37.5em) {
       .footer__list {
-        width: 50%; } }
+        font-size: 2rem; } }
   .footer a {
     color: #fff; }
 

@@ -1,4 +1,7 @@
 .footer {
+    display: flex;
+    justify-content: center;
+
     margin-top: 10rem;
     padding: 5rem 10rem;
     background-color: $color-secondary;
@@ -38,7 +41,9 @@
         color: #fff;
 
         @include respond(phone) {
-            width: 50%;
+           font-size: 2rem;
+           
+
         }
     }
 
