@@ -115,7 +115,7 @@ body {
     color: #fff; }
 
 .header {
-  height: 85vh;
+  height: 75vh;
   width: 100%;
   margin-top: -4rem;
   background-image: url("../img/header2x.png");
@@ -408,7 +408,8 @@ body {
     transform: none; }
 
 .section-gallery {
-  margin-top: 10rem; }
+  margin-top: 10rem;
+  padding-bottom: 5rem; }
 
 .gallery {
   display: flex;
