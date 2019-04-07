@@ -4,9 +4,9 @@
 
 .gallery {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     flex-wrap: wrap;
-    
+
     padding-left: 10rem;
     padding-right: 10rem;
     width: 100%;
@@ -21,10 +21,6 @@
         padding-right: 5rem;
     }
 
-    &__item {
-        margin: 1em;
-    }
-
 
     &__img {
         padding: .5rem;
@@ -34,6 +30,6 @@
     }
 
     &__img:hover {
-        transform: scale(1.1);
+        transform: translateY(-.5rem);
     }
 }
