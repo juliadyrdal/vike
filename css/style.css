@@ -82,19 +82,13 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
   background-color: #057FB8; }
   @media (max-width: 75em) {
     .footer {
-      margin-top: 13rem;
       padding-left: 7rem; } }
   @media (max-width: 56.25em) {
     .footer {
-      margin-top: 14rem;
       padding-left: 5rem; } }
-  @media (max-width: 37.5em) {
-    .footer {
-      margin-top: 9rem; } }
   .footer__info {
     display: flex;
     padding: 5rem 10rem; }
@@ -184,7 +178,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 4rem 10rem;
-  margin-top: 16rem;
   background-color: #05A0B8; }
   @media (max-width: 75em) {
     .icon-menu {
@@ -194,8 +187,7 @@ body {
       padding: 4rem 5rem; } }
   @media (max-width: 37.5em) {
     .icon-menu {
-      padding: 2.5rem 5rem;
-      margin-top: 15rem; } }
+      padding: 2.5rem 5rem; } }
   .icon-menu__box {
     display: flex;
     flex-basis: 40%;
