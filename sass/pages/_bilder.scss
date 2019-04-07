@@ -4,15 +4,22 @@
 
 .gallery {
     display: flex;
-    align-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-
-
-    margin-left: 10rem;
-    margin-right: 10rem;
-    list-style: none;
-    padding: 0;
+    
+    padding-left: 10rem;
+    padding-right: 10rem;
     width: 100%;
+
+    @include respond(tab-land) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    @include respond(tab-port) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 
     &__item {
         margin: 1em;

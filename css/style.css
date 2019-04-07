@@ -414,13 +414,19 @@ body {
 
 .gallery {
   display: flex;
-  align-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  list-style: none;
-  padding: 0;
+  padding-left: 10rem;
+  padding-right: 10rem;
   width: 100%; }
+  @media (max-width: 75em) {
+    .gallery {
+      padding-left: 7rem;
+      padding-right: 7rem; } }
+  @media (max-width: 56.25em) {
+    .gallery {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
   .gallery__item {
     margin: 1em; }
   .gallery__img {
