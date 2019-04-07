@@ -3,7 +3,6 @@
     justify-content: center;
 
     margin-top: 10rem;
-    padding: 5rem 10rem;
     background-color: $color-secondary;
 
     @include respond(tab-land) {
@@ -23,13 +22,19 @@
     &__info {
         display: flex;
 
+        padding: 5rem 10rem;
+
+        @include respond(tab-land) {
+            padding-left: 7rem;
+        }
+    
+        @include respond(tab-port) {
+            padding-left: 5rem;
+        }
+
         @include respond(phone) {
             display: block;
         }
-    }
-
-    &__group {
-        display: flex;
     }
 
     &__list {

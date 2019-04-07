@@ -1,14 +1,14 @@
 .section-gallery {
-    margin-top: 20rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    margin-top: 10rem;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
     //width: 100%;
 
     @include respond(tab-land) {
@@ -40,7 +40,7 @@
         transition: 1s;
     }
 
-    &__img:hover {
+    &__img:hover, &__vid:hover {
         transform: translateY(-.5rem);
     }
 }
