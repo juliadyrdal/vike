@@ -81,7 +81,7 @@ body {
 
 .footer {
   display: flex;
-  padding: 0 calc(50% - 480px);
+  padding: 0 calc(50% - 520px);
   background-color: #057FB8; }
   .footer__info {
     display: flex;
@@ -113,7 +113,7 @@ body {
   background-image: url("../img/header2x.png");
   background-size: cover;
   background-position: center;
-  padding: 0 calc(50% - 480px); }
+  padding: 0 calc(50% - 520px); }
   @media (max-width: 75em) {
     .header {
       height: 75vh; } }
@@ -402,7 +402,7 @@ body {
 .section-gallery {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 0 calc(50% - 480px); }
+  padding: 0 calc(50% - 520px); }
 
 .gallery {
   display: flex;
@@ -435,7 +435,7 @@ body {
     transform: translateY(0.3rem); }
 
 .section-dokumenter {
-  padding: 0 calc(50% - 480px);
+  padding: 0 calc(50% - 520px);
   margin-top: 6rem;
   margin-bottom: 10rem; }
 
