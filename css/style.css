@@ -423,7 +423,7 @@ body {
     height: 22rem;
     transition: 1s; }
   .gallery__img:hover, .gallery__vid:hover {
-    transform: translateY(-0.5rem); }
+    transform: translateY(0.3rem); }
 
 .section-dokumenter {
   padding: 0 calc(50% - 480px);
