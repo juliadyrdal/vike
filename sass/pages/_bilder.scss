@@ -20,6 +20,10 @@
         height: 22rem;
         transition: 1s;
 
+        @include respond(tab-port) {
+            height: 15rem;
+        }
+
         @include respond(phone) {
             height: 38rem;
         }
@@ -30,6 +34,14 @@
        // width: 20%;
         height: 22rem;
         transition: 1s;
+
+        @include respond(tab-port) {
+            height: 15rem;
+        }
+
+        @include respond(phone) {
+            height: 22rem;
+        }
     }
 
     &__img:hover, &__vid:hover {

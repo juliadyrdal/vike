@@ -415,6 +415,9 @@ body {
     padding: .5rem;
     height: 22rem;
     transition: 1s; }
+    @media (max-width: 56.25em) {
+      .gallery__img {
+        height: 15rem; } }
     @media (max-width: 37.5em) {
       .gallery__img {
         height: 38rem; } }
@@ -422,6 +425,12 @@ body {
     padding: .5rem;
     height: 22rem;
     transition: 1s; }
+    @media (max-width: 56.25em) {
+      .gallery__vid {
+        height: 15rem; } }
+    @media (max-width: 37.5em) {
+      .gallery__vid {
+        height: 22rem; } }
   .gallery__img:hover, .gallery__vid:hover {
     transform: translateY(0.3rem); }
 
