@@ -217,12 +217,12 @@ body {
   align-items: center;
   position: relative;
   top: 4rem;
-  margin: 4rem 10rem;
+  margin-top: 4rem;
   height: 5rem;
   background-color: #fff; }
   @media (max-width: 75em) {
     .navigation {
-      margin: 4rem 7rem; } }
+      margin: 4rem 5rem; } }
   @media (max-width: 56.25em) {
     .navigation {
       margin: 3rem 5rem; } }
