@@ -1,11 +1,15 @@
 .section-dokumenter {
-    padding: 0 calc(50% - 450px);
+    padding: 0 calc(50% - 480px);
     margin-top: 6rem;
     margin-bottom: 10rem;
 }
 
 .dokumenter {
-    padding-left: 5rem;
+
+    @include respond(tab-land) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     
 
     &__row {
