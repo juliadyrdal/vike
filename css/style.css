@@ -83,13 +83,13 @@ body {
   display: flex;
   padding: 0 calc(50% - 480px);
   background-color: #057FB8; }
-  @media (max-width: 75em) {
-    .footer {
-      padding-left: 5rem;
-      padding-right: 5rem; } }
   .footer__info {
     display: flex;
     margin: 5rem 0; }
+    @media (max-width: 75em) {
+      .footer__info {
+        padding-left: 5rem;
+        padding-right: 5rem; } }
     @media (max-width: 37.5em) {
       .footer__info {
         flex-direction: column; } }
@@ -112,7 +112,8 @@ body {
   margin-top: -4rem;
   background-image: url("../img/header2x.png");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding: 0 calc(50% - 480px); }
   @media (max-width: 75em) {
     .header {
       height: 75vh; } }
@@ -121,7 +122,6 @@ body {
       height: 65vh; } }
 
 .heading-overlay {
-  margin-left: 10rem;
   margin-top: 13rem;
   padding: 2rem 2rem;
   width: 50%;
@@ -131,21 +131,20 @@ body {
   background-color: rgba(5, 160, 184, 0.75); }
   @media (max-width: 75em) {
     .heading-overlay {
-      margin-left: 7rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
       width: 55%;
       font-size: 3rem; } }
   @media (max-width: 56.25em) {
     .heading-overlay {
-      margin-left: 5rem;
       width: 65%;
       font-size: 2.8rem; } }
   @media (max-width: 37.5em) {
     .heading-overlay {
-      width: 75%;
+      width: 100%;
       font-size: 2.4rem; } }
 
 .heading-overlay--sub {
-  margin-left: 10rem;
   margin-top: 4rem;
   padding: 2rem 2rem;
   width: 60%;
@@ -155,16 +154,17 @@ body {
   background-color: rgba(5, 127, 184, 0.75); }
   @media (max-width: 75em) {
     .heading-overlay--sub {
-      margin-left: 7rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
       width: 65%; } }
   @media (max-width: 56.25em) {
     .heading-overlay--sub {
-      margin-left: 5rem;
       width: 75%; } }
   @media (max-width: 37.5em) {
     .heading-overlay--sub {
       font-size: 1.6rem;
-      line-height: 1.6; } }
+      line-height: 1.6;
+      width: 100%; } }
 
 .icon-menu {
   display: flex;

@@ -4,16 +4,16 @@
 
     background-color: $color-secondary;
 
-    @include respond(tab-land) {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
 
     &__info {
         display: flex;
     
         margin: 5rem 0;
+
+        @include respond(tab-land) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
 
 
         @include respond(phone) {
