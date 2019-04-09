@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    padding: 0 calc(50% - 480px);
+    padding: $container-width;
 
     background-color: $color-secondary;
 
