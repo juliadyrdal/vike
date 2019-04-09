@@ -407,7 +407,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .gallery {
       padding-left: 5rem;
       padding-right: 5rem; } }
@@ -462,5 +462,4 @@ body {
 
 .dokumenter__icon {
   margin-bottom: 1rem;
-  height: 15rem;
-  align-self: flex-start; }
+  height: 15rem; }
