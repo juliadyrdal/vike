@@ -1,32 +1,24 @@
 .footer {
     display: flex;
-    justify-content: center;
+    padding: 0 calc(50% - 450px);
 
     background-color: $color-secondary;
 
     @include respond(tab-land) {
-        padding-left: 7rem;
+        //padding-left: 7rem;
     }
 
     @include respond(tab-port) {
-        padding-left: 5rem;
+        //padding-left: 5rem;
     }
 
     &__info {
         display: flex;
 
-        padding: 5rem 10rem;
-
-        @include respond(tab-land) {
-            padding-left: 7rem;
-        }
-    
-        @include respond(tab-port) {
-            padding-left: 5rem;
-        }
+        padding: 5rem;
 
         @include respond(phone) {
-            display: block;
+            flex-direction: column;
         }
     }
 
