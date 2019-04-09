@@ -116,10 +116,11 @@ body {
   padding: 0 calc(50% - 520px); }
   @media (max-width: 75em) {
     .header {
-      height: 75vh; } }
+      height: 75vh;
+      background-position: left; } }
   @media (max-width: 56.25em) {
     .header {
-      height: 65vh; } }
+      height: 85vh; } }
 
 .heading-overlay {
   margin-top: 13rem;
@@ -137,12 +138,12 @@ body {
       font-size: 3rem; } }
   @media (max-width: 56.25em) {
     .heading-overlay {
+      margin-top: 10rem;
+      padding: 2rem 0;
       width: 65%;
-      font-size: 2.8rem; } }
-  @media (max-width: 37.5em) {
-    .heading-overlay {
-      width: 100%;
-      font-size: 2.4rem; } }
+      font-size: 3.4rem;
+      color: #057FB8;
+      background-color: transparent; } }
 
 .heading-overlay--sub {
   margin-top: 4rem;
@@ -159,14 +160,16 @@ body {
       width: 65%; } }
   @media (max-width: 56.25em) {
     .heading-overlay--sub {
-      width: 75%; } }
+      width: 75%;
+      margin-top: 0;
+      padding: 2rem 0;
+      color: #fff;
+      background-color: transparent; } }
   @media (max-width: 37.5em) {
     .heading-overlay--sub {
-      font-size: 1.6rem;
-      line-height: 1.6;
-      width: 100%; } }
+      line-height: 1.6; } }
 
-.icon-menu {
+.icon-menu, .icon-menu--mobile {
   display: flex;
   justify-content: space-between;
   padding: 0 calc(50% - 520px);
@@ -174,45 +177,66 @@ body {
   padding-bottom: 4rem;
   background-color: #05A0B8; }
   @media (max-width: 75em) {
-    .icon-menu {
-      padding: 4rem 7rem; } }
-  @media (max-width: 75em) {
-    .icon-menu {
+    .icon-menu, .icon-menu--mobile {
       padding: 4rem 5rem; } }
   @media (max-width: 37.5em) {
-    .icon-menu {
+    .icon-menu, .icon-menu--mobile {
       padding: 2.5rem 5rem; } }
-  .icon-menu__box {
+  .icon-menu__box, .icon-menu--mobile__box {
     display: flex;
     flex-basis: 40%;
     margin-right: 3rem;
     transition: .3s; }
     @media (max-width: 75em) {
-      .icon-menu__box {
+      .icon-menu__box, .icon-menu--mobile__box {
         flex-direction: column; } }
-  .icon-menu__box:hover {
+  .icon-menu__box:hover, .icon-menu--mobile__box:hover {
     transform: translateY(-1rem); }
-  .icon-menu__icon-link {
+  .icon-menu__icon-link, .icon-menu--mobile__icon-link {
     margin-right: 1rem; }
-  .icon-menu__icon {
+  .icon-menu__icon, .icon-menu--mobile__icon {
     height: 9rem; }
     @media (max-width: 37.5em) {
-      .icon-menu__icon {
+      .icon-menu__icon, .icon-menu--mobile__icon {
         height: 5rem; } }
-  .icon-menu__link {
+  .icon-menu__link, .icon-menu--mobile__link {
     margin-top: 1rem;
     font-size: 1.4rem;
     text-decoration: none;
     color: #fff; }
     @media (max-width: 37.5em) {
-      .icon-menu__link {
+      .icon-menu__link, .icon-menu--mobile__link {
         font-size: 1.3rem; } }
-  .icon-menu__text {
+  .icon-menu__text, .icon-menu--mobile__text {
     margin-top: 1rem;
     text-decoration: none; }
     @media (max-width: 75em) {
-      .icon-menu__text {
+      .icon-menu__text, .icon-menu--mobile__text {
         display: none; } }
+
+.icon-menu {
+  display: flex; }
+  @media (max-width: 56.25em) {
+    .icon-menu {
+      display: none; } }
+
+.icon-menu--mobile {
+  display: none;
+  margin-top: 8rem; }
+  @media (max-width: 56.25em) {
+    .icon-menu--mobile {
+      display: flex;
+      padding-top: 2rem;
+      padding-bottom: 2rem; } }
+  @media (max-width: 37.5em) {
+    .icon-menu--mobile {
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+  .icon-menu--mobile__icon {
+    height: 9rem; }
+    @media (max-width: 56.25em) {
+      .icon-menu--mobile__icon {
+        height: 5rem; } }
 
 .navigation {
   display: flex;
@@ -227,7 +251,8 @@ body {
       margin: 4rem 5rem; } }
   @media (max-width: 56.25em) {
     .navigation {
-      margin: 3rem 5rem; } }
+      margin: 3rem 5rem;
+      background-color: transparent; } }
   .navigation a {
     text-decoration: none;
     font-family: sans-serif; }
@@ -238,6 +263,10 @@ body {
     font-size: 2.8rem;
     font-weight: 200;
     text-transform: uppercase; }
+    @media (max-width: 56.25em) {
+      .navigation__logo {
+        color: #05A0B8;
+        margin-left: 0; } }
     @media (max-width: 37.5em) {
       .navigation__logo {
         margin-left: 1.5rem; } }
@@ -246,6 +275,9 @@ body {
     color: #333;
     font-size: 1.8rem;
     font-weight: 200; }
+    @media (max-width: 56.25em) {
+      .navigation__logo-sub {
+        color: #fff; } }
   .navigation__list {
     display: flex;
     align-items: center;
@@ -256,7 +288,7 @@ body {
     font-size: 1.6rem;
     font-weight: 200;
     list-style-type: none; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .navigation__list {
         display: none; } }
   .navigation__link {
@@ -267,11 +299,11 @@ body {
         padding: 2rem 1.5rem; } }
     @media (max-width: 56.25em) {
       .navigation__link {
-        padding: 2rem 1rem; } }
+        padding: 5rem 1rem; } }
   .navigation__button {
     justify-content: flex-end;
     align-self: stretch; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .navigation__button {
         display: none; } }
 
@@ -284,9 +316,15 @@ body {
   transition: all 0.5s ease;
   margin-top: 1.6rem;
   display: none; }
+  @media (max-width: 56.25em) {
+    .dropdown {
+      display: none; } }
   .dropdown__item {
     clear: both;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .dropdown__item {
+        display: none; } }
   .dropdown__link {
     color: #333;
     padding: 1.5rem 2rem;
@@ -303,103 +341,6 @@ body {
   display: block;
   width: 13%;
   background-color: #fff; }
-
-.navigation-mobile {
-  display: none;
-  /*
-    * Just a quick hamburger
-    */
-  /* 
-     * Transform all the slices of hamburger
-     * into a crossmark.
-     */
-  /*
-     * But let's hide the middle one.
-     */
-  /*
-     * Ohyeah and the last one should go the other direction
-    */
-  /*
-     * Make this absolute positioned
-     * at the top left of the screen
-     */
-  /*
-     * And let's slide it in from the left
-     */ }
-  @media (max-width: 37.5em) {
-    .navigation-mobile {
-      display: flex;
-      flex-direction: column; } }
-  .navigation-mobile__toggle {
-    display: block;
-    position: relative;
-    top: .3rem;
-    right: 1.2rem;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none; }
-  .navigation-mobile__toggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-    /* and place it over the hamburger */
-    -webkit-touch-callout: none; }
-  .navigation-mobile__toggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #666;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-  .navigation-mobile__toggle span:first-child {
-    transform-origin: 0% 0%; }
-  .navigation-mobile__toggle span:nth-last-child(2) {
-    transform-origin: 0% 100%; }
-  .navigation-mobile__toggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #fff; }
-  .navigation-mobile__toggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2); }
-  .navigation-mobile__toggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px); }
-  .navigation-mobile__list {
-    position: absolute;
-    width: 55rem;
-    height: 130vh;
-    margin-top: -10rem;
-    margin-left: -42rem;
-    padding: 5rem;
-    padding-left: 15rem;
-    padding-top: 12.5rem;
-    background: #05A0B8;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  .navigation-mobile__list li {
-    padding: 10px 0;
-    font-size: 22px; }
-  .navigation-mobile__item {
-    padding-bottom: 2rem; }
-  .navigation-mobile__link {
-    color: #fff; }
-  .navigation-mobile__toggle input:checked ~ ul {
-    transform: none; }
 
 .section-gallery {
   margin-top: 5rem;
