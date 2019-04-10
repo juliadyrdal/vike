@@ -25,18 +25,15 @@
     &__logo {
         margin-right: 1rem;
         margin-left: 5rem;
-        color: #333;
+        color: $color-secondary;
         font-size: 2.8rem;
         font-weight: 200;
         text-transform: uppercase;
 
         @include respond(tab-port) {
+            font-size: 3rem;
             color: $color-primary;
             margin-left: 0;
-        }
-
-        @include respond(phone) {
-            margin-left: 1.5rem;
         }
     }
 
@@ -47,6 +44,7 @@
         font-weight: 200;
 
         @include respond(tab-port) {
+            font-size: 2.2rem;
             color: #fff;
         }
     }
@@ -156,7 +154,7 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 3rem;
+        top: 2.5rem;
         right: 6rem;
         border-radius: 50%;
         z-index: 1000;
@@ -169,7 +167,7 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 3.5rem;
+        top: 3rem;
         right: 6.5rem;
         background-image: radial-gradient($color-primary, $color-secondary);
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);

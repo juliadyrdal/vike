@@ -81,7 +81,7 @@ body {
 
 .footer {
   display: flex;
-  padding: 0 calc(50% - 520px);
+  padding: 0 calc(50% - 570px);
   background-color: #057FB8; }
   .footer__info {
     display: flex;
@@ -113,7 +113,7 @@ body {
   background-image: url("../img/header2x.png");
   background-size: cover;
   background-position: center;
-  padding: 0 calc(50% - 520px); }
+  padding: 0 calc(50% - 570px); }
   @media (max-width: 75em) {
     .header {
       height: 75vh;
@@ -125,7 +125,7 @@ body {
 .heading-overlay {
   margin-top: 13rem;
   padding: 2rem 2rem;
-  width: 50%;
+  width: 60%;
   font-size: 3.4rem;
   font-weight: 200;
   color: #fff;
@@ -139,16 +139,13 @@ body {
   @media (max-width: 56.25em) {
     .heading-overlay {
       margin-top: 10rem;
-      padding: 2rem 0;
-      width: 65%;
-      font-size: 3.4rem;
-      color: #057FB8;
-      background-color: transparent; } }
+      margin-bottom: 2rem;
+      width: 75%; } }
 
 .heading-overlay--sub {
   margin-top: 4rem;
   padding: 2rem 2rem;
-  width: 60%;
+  width: 65%;
   font-size: 1.8rem;
   font-weight: 200;
   color: #fff;
@@ -163,6 +160,7 @@ body {
       width: 75%;
       margin-top: 0;
       padding: 2rem 0;
+      font-size: 2.2rem;
       color: #fff;
       background-color: transparent; } }
   @media (max-width: 37.5em) {
@@ -172,7 +170,7 @@ body {
 .icon-menu, .icon-menu--mobile {
   display: flex;
   justify-content: space-between;
-  padding: 0 calc(50% - 520px);
+  padding: 0 calc(50% - 570px);
   padding-top: 4rem;
   padding-bottom: 4rem;
   background-color: #05A0B8; }
@@ -238,17 +236,15 @@ body {
   .navigation__logo {
     margin-right: 1rem;
     margin-left: 5rem;
-    color: #333;
+    color: #057FB8;
     font-size: 2.8rem;
     font-weight: 200;
     text-transform: uppercase; }
     @media (max-width: 56.25em) {
       .navigation__logo {
+        font-size: 3rem;
         color: #05A0B8;
         margin-left: 0; } }
-    @media (max-width: 37.5em) {
-      .navigation__logo {
-        margin-left: 1.5rem; } }
   .navigation__logo-sub {
     margin-right: auto;
     color: #333;
@@ -256,6 +252,7 @@ body {
     font-weight: 200; }
     @media (max-width: 56.25em) {
       .navigation__logo-sub {
+        font-size: 2.2rem;
         color: #fff; } }
   .navigation__list {
     display: flex;
@@ -333,7 +330,7 @@ body {
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 3rem;
+    top: 2.5rem;
     right: 6rem;
     border-radius: 50%;
     z-index: 1000;
@@ -344,7 +341,7 @@ body {
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 3.5rem;
+    top: 3rem;
     right: 6.5rem;
     background-image: radial-gradient(#05A0B8, #057FB8);
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -414,7 +411,7 @@ body {
 .section-gallery {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  padding: 0 calc(50% - 520px); }
+  padding: 0 calc(50% - 570px); }
 
 .gallery {
   display: flex;
@@ -447,7 +444,7 @@ body {
     transform: translateY(0.3rem); }
 
 .section-dokumenter {
-  padding: 0 calc(50% - 520px);
+  padding: 0 calc(50% - 570px);
   margin-top: 6rem;
   margin-bottom: 10rem; }
 
