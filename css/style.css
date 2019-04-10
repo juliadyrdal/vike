@@ -69,6 +69,9 @@ body {
 .bold {
   font-weight: 600; }
 
+.bold-medium {
+  font-weight: 400; }
+
 .center {
   text-align: center; }
 
@@ -267,15 +270,17 @@ body {
     @media (max-width: 56.25em) {
       .navigation__list {
         display: none; } }
-  .navigation__link {
+  .navigation__link:link, .navigation__link:visited {
     padding: 2rem 2rem;
     color: #333; }
     @media (max-width: 75em) {
-      .navigation__link {
+      .navigation__link:link, .navigation__link:visited {
         padding: 2rem 1.5rem; } }
     @media (max-width: 56.25em) {
-      .navigation__link {
+      .navigation__link:link, .navigation__link:visited {
         padding: 5rem 1rem; } }
+  .navigation__link:hover, .navigation__link:active {
+    font-weight: 400; }
   .navigation__button {
     justify-content: flex-end;
     align-self: stretch; }
@@ -307,8 +312,7 @@ body {
     display: inline-block;
     width: 100%; }
   .dropdown__link:hover {
-    background-color: #D8D8D8;
-    color: #fff; }
+    font-weight: 400; }
 
 .navigation__item:hover > ul,
 .dropdown:hover {

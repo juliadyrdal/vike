@@ -67,15 +67,23 @@
     }
 
     &__link {
-        padding: 2rem 2rem;
-        color: #333;
+        &:link,
+        &:visited {
+            padding: 2rem 2rem;
+            color: #333; 
+            
+            @include respond (tab-land) {
+                padding: 2rem 1.5rem;
+            }
 
-        @include respond (tab-land) {
-            padding: 2rem 1.5rem;
+            @include respond (tab-port) {
+                padding: 5rem 1rem;
+            }
         }
 
-        @include respond (tab-port) {
-            padding: 5rem 1rem;
+        &:hover,
+        &:active {
+            font-weight: 400;
         }
     }
 
@@ -121,8 +129,9 @@
         }
 
         &__link:hover {
-            background-color: #D8D8D8;
-            color: #fff;
+            //background-color: #D8D8D8;
+            //color: #fff;
+            font-weight: 400;
         }
     }
    
