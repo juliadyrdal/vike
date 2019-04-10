@@ -141,6 +141,12 @@
 //MOBILE NAVIGATION
 
 .mobile-nav {
+    display: none;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+
     &__checkbox {
         display: none;
     }
@@ -150,7 +156,7 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 6rem;
+        top: 3rem;
         right: 6rem;
         border-radius: 50%;
         z-index: 1000;
@@ -163,7 +169,7 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
+        top: 3.5rem;
         right: 6.5rem;
         background-image: radial-gradient($color-primary, $color-secondary);
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
