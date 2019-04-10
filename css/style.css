@@ -217,24 +217,6 @@ body {
 .icon-menu {
   display: flex; }
 
-.icon-menu--mobile {
-  display: none;
-  margin-top: 8rem; }
-  @media (max-width: 56.25em) {
-    .icon-menu--mobile {
-      display: none;
-      padding-top: 2rem;
-      padding-bottom: 2rem; } }
-  @media (max-width: 37.5em) {
-    .icon-menu--mobile {
-      padding-top: 1rem;
-      padding-bottom: 1rem; } }
-  .icon-menu--mobile__icon {
-    height: 9rem; }
-    @media (max-width: 56.25em) {
-      .icon-menu--mobile__icon {
-        height: 5rem; } }
-
 .navigation {
   display: flex;
   align-items: center;
