@@ -67,7 +67,8 @@ body {
       font-size: 1.4rem; } }
 
 .bold {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #057FB8; }
 
 .bold-medium {
   font-weight: 400; }
@@ -280,7 +281,8 @@ body {
       .navigation__link:link, .navigation__link:visited {
         padding: 5rem 1rem; } }
   .navigation__link:hover, .navigation__link:active {
-    font-weight: 400; }
+    font-weight: 400;
+    color: #057FB8; }
   .navigation__button {
     justify-content: flex-end;
     align-self: stretch; }
@@ -312,7 +314,8 @@ body {
     display: inline-block;
     width: 100%; }
   .dropdown__link:hover {
-    font-weight: 400; }
+    font-weight: 400;
+    color: #057FB8; }
 
 .navigation__item:hover > ul,
 .dropdown:hover {
