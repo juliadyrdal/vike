@@ -38,7 +38,7 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
-  color: #333; }
+  color: #666; }
 
 .heading {
   margin-top: 3rem;
@@ -130,7 +130,7 @@ body {
   padding: 2rem 2rem;
   width: 60%;
   font-size: 3.4rem;
-  font-weight: 200;
+  font-weight: 400;
   color: #fff;
   background-color: rgba(5, 160, 184, 0.75); }
   @media (max-width: 75em) {
