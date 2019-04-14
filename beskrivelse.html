@@ -61,6 +61,30 @@
             </div>
         </header>
 
+        <section class="section-beskrivelse">
+            <h1 class="heading">Beskrivelse</h1>
+        </section>
+
+        <section class="section-map">
+            <div id="map" class="u-margin-top-big"></div>
+                <script>
+                    function initMap() {
+                        var cheng = {lat: 60.698872, lng: 5.579733};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 16,
+                            center: cheng
+                        });
+                        var marker = new google.maps.Marker({
+                            position: cheng,
+                            map: map
+                            });
+                        }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVYPkV7dfOnCZfX99IajNsYCdSpbqn0hY&callback=initMap">
+                </script>
+        </section>
+
         <footer class="footer">
             <div class="footer__info">
                 <ul class="footer__list">
@@ -115,8 +139,5 @@
                 </ul>
             </div>
         </footer>
-
-    
-
     </body>
 </html>

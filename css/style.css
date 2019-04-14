@@ -83,6 +83,11 @@ body {
   color: #fff;
   background-color: #05A0B8; }
 
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
 .footer {
   display: flex;
   padding: 0 calc(50% - 570px);
@@ -477,10 +482,11 @@ body {
   list-style-type: none; }
 
 .dokumenter__item {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  margin-bottom: 1rem; }
 
 .dokumenter__item:not(:last-child) {
-  margin-right: 5rem;
+  margin-right: 7rem;
   display: inline-block; }
 
 .dokumenter__link {

@@ -23,11 +23,12 @@
 
     &__item {
         margin-top: 4rem;
+        margin-bottom: 1rem;
     }
 
 
     &__item:not(:last-child) {
-        margin-right: 5rem;
+        margin-right: 7rem;
         display: inline-block;
     }
 
