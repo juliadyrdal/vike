@@ -67,7 +67,7 @@ body {
       font-size: 1.4rem; } }
 
 .bold {
-  font-weight: 600; }
+  font-weight: 800; }
 
 .bold-medium {
   font-weight: 400;
@@ -210,8 +210,10 @@ body {
     @media (max-width: 37.5em) {
       .icon-menu__link, .icon-menu--mobile__link {
         font-size: 1.3rem; } }
+  .icon-menu span, .icon-menu--mobile span {
+    font-weight: 800; }
   .icon-menu__text, .icon-menu--mobile__text {
-    margin-top: 1rem;
+    margin-top: .8rem;
     text-decoration: none; }
     @media (max-width: 75em) {
       .icon-menu__text, .icon-menu--mobile__text {
