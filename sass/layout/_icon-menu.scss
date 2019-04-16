@@ -19,11 +19,15 @@
         display: flex;
         flex-basis: 40%;
 
-        margin-right: 3rem;
         transition: .3s;
 
         @include respond(tab-land) {
             flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-right: auto;
+            padding-right: 1rem;
         }
     }
 

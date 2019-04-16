@@ -14,6 +14,7 @@
 
     &__info {
         display: flex;
+        margin-right: auto;
     
 
         @include respond(tab-land) {
@@ -49,7 +50,7 @@
         //display: inline-block;
         //width: 25rem;
         padding-top: 1rem;
-        font-size: 2.4rem;
+        font-size: 3rem;
         font-weight: 200;
         text-decoration: none;
 
