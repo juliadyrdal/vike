@@ -13,7 +13,7 @@
 
     @include respond(tab-port) {
         background-color: transparent;
-        margin: 2rem 5rem;
+        margin: 1.5rem 2rem;
     }
 
     & a {
@@ -182,11 +182,16 @@
         width: 7rem;
         position: fixed;
         top: 1.5rem;
-        right: 6rem;
+        right: 2rem;
         border-radius: 50%;
         z-index: 1000;
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            height: 6rem;
+            width: 6rem;
+        }
     }
 
     &__background {
@@ -195,11 +200,16 @@
         border-radius: 50%;
         position: fixed;
         top: 2rem;
-        right: 6.5rem;
+        right: 2.5rem;
         background-image: radial-gradient($color-primary, $color-secondary);
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         //transform: scale(80);
+
+        @include respond(tab-port) {
+            height: 5rem;
+            width: 5rem;
+        }
     }
 
     &__nav {
@@ -258,6 +268,10 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
+
+        @include respond(tab-port) {
+            margin-top: 3rem;
+        }
 
         &,
         &::before,

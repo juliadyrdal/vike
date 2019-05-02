@@ -14,7 +14,8 @@
     }
 
     @include respond(tab-port) {
-        height: 75vh;
+        height: 72vh;
+        padding-top: 2rem;
     }
 }
 
@@ -34,12 +35,16 @@
     }
 
     @include respond(tab-port) {
-        margin-top: 15rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 12rem;
         margin-bottom: 2rem;
         padding: 1.5rem 1.5rem;
-        width: 75%;
-       font-size: 2.4rem;
-        // color: $color-secondary;
+        width: 93%;
+        font-size: 2.8rem;
+        font-weight: 600;
+        background-color: transparent;
+        color: $color-primary;
     }
 }
 
@@ -62,7 +67,9 @@
     }
 
     @include respond(tab-port) {
-        width: 75%;
+        width: 93%;
+        margin-left: 2rem;
+        margin-right: 2rem;
         margin-top: 0;
         padding: 2rem 0;
         font-size: 2.2rem;

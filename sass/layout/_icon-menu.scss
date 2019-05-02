@@ -1,8 +1,8 @@
-.icon-menu, .icon-menu--mobile {
+.icon-menu {
     display: flex;
     justify-content: space-between;
 
-    padding: $container-width;
+    //padding: $container-width;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: $color-primary;
@@ -11,8 +11,8 @@
         padding: 4rem 5rem;
     }
 
-    @include respond(phone) {
-        padding: 2.5rem 5rem;
+    @include respond(tab-port) {
+        padding: 2.5rem 1.5rem;
     }
 
     &__box {
@@ -23,6 +23,10 @@
 
         @include respond(tab-land) {
             flex-direction: column;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
         }
 
         &:not(:last-child) {
@@ -70,13 +74,4 @@
             display: none;
         }
     }
-}
-
-.icon-menu {
-    display: flex;
-
-    // @include respond(tab-port) {
-    //     display: none;
-    // }
-
 }
